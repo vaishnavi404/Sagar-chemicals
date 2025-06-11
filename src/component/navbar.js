@@ -49,7 +49,7 @@ function BasicExample() {
                 </li> */}
                  <li className="nav-item dropdown ms-3 ">
                 <button 
-                  className="nav-link dropdown-toggle btn btn-link p-0 border-0"
+                  className="nav-link dropdown-toggle btn btn-link"
                
                   id="brochureDropdown"
                 

@@ -24,9 +24,13 @@ display: flex;
   margin-top: 2%;
   padding: 0 20px; /* Optional padding */
 }
-.nav-item a{
+.nav-item a {
   color: white;
 }
+.nav-item button {
+  color: white;
+}
+
 
 .contactC img {
   height: 75%;
