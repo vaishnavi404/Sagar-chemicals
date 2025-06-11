@@ -11,7 +11,7 @@ function BasicExample() {
             <div className="logo-container">
                             <img 
                                 src={logo}
-                                className="img-fluid"
+                                className="img-fluid" alt=""
                             />
                         </div>
               <span className="brand-name ms-2">Sagar Chemicals</span>

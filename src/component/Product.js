@@ -109,13 +109,13 @@ function ProductsSection  (){
       window.history.back(); // Remove the popup state
     }
   };
-  const [expanded, setExpanded] = useState(products.map(() => false));
+  // const [expanded, setExpanded] = useState(products.map(() => false));
 
-  const toggleReadMore = (index) => {
-    setExpanded((prevState) =>
-      prevState.map((item, i) => (i === index ? !item : item))
-    );
-  }; 
+  // const toggleReadMore = (index) => {
+  //   setExpanded((prevState) =>
+  //     prevState.map((item, i) => (i === index ? !item : item))
+  //   );
+  // }; 
 
     return (
     
