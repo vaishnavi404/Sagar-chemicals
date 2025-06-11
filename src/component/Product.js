@@ -1,13 +1,13 @@
 import React, { useState,useEffect } from "react";
 import xlPlus400 from "../ProductsImages/LiquidLaundryDetergent.png";
+import XL300 from "../ProductsImages/LAUNDRY_LIQUID_DETERGENT_XL300 .jpg"
 import FabricSoftner from "../ProductsImages/FabricSoftner.png";
-import brighteningImage from "../ProductsImages/brighteningImage.jpg";
 import BrightberLiquid  from "../ProductsImages/OpticalBrightnerLiquidPlus.png";
 import  ColorFabricBleach from "../ProductsImages/ColorFabricBleach.jpg";
 import  WhiteFabricBleach from "../ProductsImages/liquidWhiteFabricBleach.png";
 import  fabricRustRemover from "../ProductsImages/FabricRustRemover.png";
 import  tinopalAdvanced from "../ProductsImages/tinopalAdvanced.jpg";
-
+import  MaticDetergentLiquid from "../ProductsImages/MaticDetergentLiquid.png";
 
 function ProductsSection  (){
    const products = [
@@ -56,7 +56,7 @@ function ProductsSection  (){
      specialFeture:["Ease in removal of grease, oil and fat stains."," Effective in cold or hot application."] 
     },
     {
-      image: brighteningImage,
+      image: XL300,
       title: "XL-300 Detergent Liquid",
       // Subtitle:"Heavy Duty Liquid Detergent",
       description:
@@ -80,6 +80,15 @@ function ProductsSection  (){
       description:
         "Tinopal optical Brightner Enhance the brightness of your fabrics with our Optical Brightener Liquid in a convenient  This product is designed to remove dullness and yellowing, giving your clothes a fresh and vibrant look. Ideal for use in laundry detergents or fabric softeners, our Optical Brightener Liquid is easy to use and highly effective.",
         packages:["1 kg"],
+        specialFeture:[]   
+    },
+    {
+      image: MaticDetergentLiquid,
+      title: "Matic Detergent Liquid",
+      // Subtitle:"Heavy Duty Liquid Detergent",
+      description:
+        "Designed for the modern laundry,XL100 Matic Liquid delivers superior performance with  technology that removes tough, dry stains in a single wash. Its remarkable performance and machine expertise is backed by top washing machine brands across the globe",
+        packages:["1Ltr"],
         specialFeture:[]   
     }
   ];

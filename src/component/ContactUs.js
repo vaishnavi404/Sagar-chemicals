@@ -20,24 +20,7 @@ function ContactSection () {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
-  // Function to handle form submission
-  // const submitForm = (e) => {
-  //   e.preventDefault(); // Prevent the default form submission behavior
 
-  //   const recipientEmail = 'vaishnavi.21910446@viit.ac.in'; // Replace with your desired recipient email
-  //   const subject = `Message from ${name}`;
-  //   const body = encodeURIComponent(message);
-  //   const sendersEmail=`SendersEmail ${email}`;
-  //   // // Construct the mailto link
-  //   // const mailtoLink = `mailto:${recipientEmail}?subject=${subject}?&body=${body}`; 
-
-  //   // // Open the default email client with the pre-filled details
-  //   // window.location.href = mailtoLink;
-  //   const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body +"\n" +sendersEmail )}`;
-
-  //   window.open(gmailComposeUrl, '_blank');
-
-  // };
   const sendEmail = (e) => {
     e.preventDefault();
     if (!user_email) {
@@ -48,9 +31,8 @@ function ContactSection () {
       return;
     }
     setEmailError(''); // Clear error if email is valid
-    emailjs
-      .sendForm('service_3cz3tcq', 'template_gihgeus', form.current, {
-        publicKey: 'kAf2yjsLsRoqzo2b-',
+   emailjs.send("service_3cz3tcq","template_gihgeus", form.current, {
+        publicKey: '0nuspUfBX73EXUQ8l',
       })
       .then(() => {
         // Show success toast
@@ -62,9 +44,11 @@ function ContactSection () {
           pauseOnHover: true,
           draggable: true,
         });
+   const formData = new FormData(form.current);      console.log(Object.fromEntries(formData.entries()));
       })
       .catch(() => {
         // Show error toast
+        
         toast.error('Message not sent, please try again!', {
           position: 'top-center',
           autoClose: 3000,
@@ -81,7 +65,14 @@ function ContactSection () {
         setEmail('');
         setEmailError('');
 
-      });
+      },
+            (error) => {
+        toast.error(`Failed to send: ${error.text}`, {
+          position: 'top-center'
+        });
+      }
+
+    );
   };
     return (
       <section id="contact" className="contact py-5 " >
@@ -143,8 +134,8 @@ function ContactSection () {
                   </button>
                   </div>
             </form>
-            {/* <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
+              {/* <form ref={form} onSubmit={sendEmail}>
+    *<label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />

@@ -5,9 +5,6 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* background: radial-gradient(rgba(255, 255, 255, 0.9), rgba(243, 250, 229, 0.5), rgba(190, 205, 163, 0)); */
-
-  /* box-shadow: 0 0 10px rgba(163, 177, 138, 0.6); */
   padding: 5px;
 }
 #Product {
@@ -30,6 +27,7 @@ display: flex;
 .nav-item a{
   color: white;
 }
+
 .contactC img {
   height: 75%;
   width: 100%;
@@ -53,6 +51,18 @@ display: flex;
   padding: 0;
  
 }
+.custom-dropdown {
+  background-color: #a3b6c5aa !important;
+}
+.custom-dropdown .dropdown-item {
+  color: black !important;
+  font-weight: bold;
+}
+.custom-dropdown .dropdown-item:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
 .hero{
 
   font-size: 1.1rem;
@@ -78,7 +88,7 @@ display: flex;
 }
 .prod {
   /* align-items: center; */
-  justify-content: center;
+  justify-content: flex-start;
 }
 .product-card {
   margin: auto;

@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import broucherpdf from "../ProductsImages/MarathiBrochure.pdf";
+import broucherpdfMarathi from "../ProductsImages/MarathiBrochure.pdf";
+import broucherpdfEnglish from "../ProductsImages/BrochurePdfEnglish.pdf"
 import logo from "../favicon.png";
 function BasicExample() {
     return (
@@ -30,23 +31,47 @@ function BasicExample() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
+                <li className="nav-item ms-3">
                   <a className="nav-link" href="#HomePage">
                   Home
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ms-3">
                   <a className="nav-link" href="#Product">
                     Products
                   </a>
                 </li>
-               <li className="nav-item">
+               {/* <li className="nav-item">
                   <a className="nav-link" href={broucherpdf}
               download="SagarChemicals_Brochure.pdf">
                     Brochure
                   </a>
-                </li>
-                <li className="nav-item">
+                </li> */}
+                 <li className="nav-item dropdown ms-3 ">
+                <a 
+                  className="nav-link dropdown-toggle "
+               
+                  id="brochureDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Brochure
+                </a>
+                <ul className="dropdown-menu custom-dropdown" aria-labelledby="brochureDropdown">
+                  <li>
+                    <a className="dropdown-item" href={broucherpdfMarathi} download="SagarChemicals_Marathi.pdf">
+                      Marathi Brochure
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href={broucherpdfEnglish} download="SagarChemicals_English.pdf">
+                      English Brochure
+                    </a>
+                  </li>
+                </ul>
+              </li>
+                <li className="nav-item ms-3">
                   <a className="nav-link" href="#contact">
                     Contact Us
                   </a>
