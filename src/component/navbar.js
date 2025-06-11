@@ -48,8 +48,8 @@ function BasicExample() {
                   </a>
                 </li> */}
                  <li className="nav-item dropdown ms-3 ">
-                <a 
-                  className="nav-link dropdown-toggle "
+                <button 
+                  className="nav-link dropdown-toggle btn btn-link"
                
                   id="brochureDropdown"
                   role="button"
@@ -57,7 +57,7 @@ function BasicExample() {
                   aria-expanded="false"
                 >
                   Brochure
-                </a>
+                </button>
                 <ul className="dropdown-menu custom-dropdown" aria-labelledby="brochureDropdown">
                   <li>
                     <a className="dropdown-item" href={broucherpdfMarathi} download="SagarChemicals_Marathi.pdf">
