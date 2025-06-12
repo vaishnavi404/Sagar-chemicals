@@ -6,7 +6,7 @@ function Footer  ()  {
           
             <div className="col-md-4 footerC">
               <h5>Contact Us</h5>
-              <p>   <i className="fas fa-phone-alt"></i>:  Dilip Yewale <a href="tel:+919769900999" className="">
+              <p>   <i className="fas fa-phone-alt"></i>: MD <a href="tel:+919769900999" className="">
             +91-9769900999
             <br />
           </a>

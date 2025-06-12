@@ -31,7 +31,7 @@ function ContactSection () {
       return;
     }
     setEmailError(''); // Clear error if email is valid
-   emailjs.send("service_3cz3tcq","template_gihgeus", form.current, {
+   emailjs.sendForm("service_41oasgk","template_gihgeus", form.current, {
         publicKey: '0nuspUfBX73EXUQ8l',
       })
       .then(() => {
@@ -46,9 +46,9 @@ function ContactSection () {
         });
    const formData = new FormData(form.current);      console.log(Object.fromEntries(formData.entries()));
       })
-      .catch(() => {
+      .catch((error) => {
         // Show error toast
-        
+         console.error("EmailJS error:", error); // 
         toast.error('Message not sent, please try again!', {
           position: 'top-center',
           autoClose: 3000,
@@ -173,7 +173,7 @@ function ContactSection () {
            </div>
            <div className="col-md-6 contactC">
              
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.3856189688736!2d72.8197581!3d18.910368899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d10d6a86cb91%3A0xc35773569a6d1d22!2sSagar%20chemicals!5e1!3m2!1sen!2sin!4v1748975182342!5m2!1sen!2sin" width="100%" height="400"   style={{ border: 0 }}allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.3856189688736!2d72.8197581!3d18.910368899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d10d6a86cb91%3A0xc35773569a6d1d22!2sSagar%20chemicals!5e1!3m2!1sen!2sin!4v1748975182342!5m2!1sen!2sin" width="100%" height="400"   style={{ border: 0 }}allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 title="Google Maps" 
              >
               </iframe>          
