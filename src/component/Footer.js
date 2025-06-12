@@ -11,10 +11,10 @@ function Footer  ()  {
             <br />
           </a>
           </p>
-          <p>   <i className="fas fa-phone-alt"></i>: Marketing head Arun sakharkar <a href="tel:+919769900999" className="">
+          <p>   <i className="fas fa-phone-alt"></i>: Marketing head Arun sakharkar <a href="tel:+919619990699" className="">
                 
 
-          +91-9769900999
+          +91-9619990699
           </a></p>
           <p><i className="fas fa-envelope"></i>  : <a href="mailto:sagarchemical9@gmail.com" className="">
               sagarchemical9@gmail.com
