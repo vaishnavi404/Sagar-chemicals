@@ -88,7 +88,7 @@ function ProductsSection  (){
       // Subtitle:"Heavy Duty Liquid Detergent",
       description:
         "Designed for the modern laundry,XL100 Matic Liquid delivers superior performance with  technology that removes tough, dry stains in a single wash. Its remarkable performance and machine expertise is backed by top washing machine brands across the globe",
-        packages:["1Ltr"],
+        packages:["5Ltr, 50Ltr"],
         specialFeture:[]   
     }
   ];
